@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayuda - Tienda en Línea</title>
+    <meta name="keywords" content="marca de ropa, ayuda, soporte">
+    <meta name="author" content="Isabella Natali, Franca Masiero, Renata Romero, Tiziano Barrera y Nicolas Alfonso">
+    <meta name="description" content="Página de ayuda para la marca de ropa IF">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 20px;
+        }
+        .titulo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .pregunta {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+        }
+        .pregunta h3 {
+            margin: 0;
+        }
+        .respuesta {
+            margin-top: 10px;
+            color: #555;
+        }
+        .sidebar {
+            display: none; /* Ocultar inicialmente */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 250px;
+            height: 100%;
+            background-color: #fff;
+            border-right: 1px solid #ccc;
+            padding: 20px;
+            z-index: 1000;
+        }
+        .sidebar.active {
+            display: block; /* Mostrar cuando esté activa */
+        }
+        .btn-close {
+            background: none;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <center>
+            <h1 class="title" id="if">IF</h1>
+        </center>
+    </header>
+    <a href="./carrito.html" id="carrito">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+        </svg>
+    </a>
+    
+    <button class="btn btn-secondary" id="menuButton">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+            <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+        </svg>
+    </button>
+    
+    <div class="sidebar" id="sidebar">
+        <button class="btn btn-close" id="closeButton">✖</button>
+        <h4>Menú</h4>
+        <ul class="list-unstyled">
+            <li><a class="dropdown-item" href="./index.html">Página Inicial</a></li>
+            <li><a class="dropdown-item" href="./productos.html">Productos</a></li>
+            <li><a class="dropdown-item" href="./hacenostupedido.html">Ayuda</a></li>
+        </ul>
+    </div>
+    
+    <section>
+        <div class="titulo">
+            <h1>Ayuda y Soporte</h1>
+        </div>
+
+        <div class="pregunta">
+            <h3>¿Cómo realizar un pedido?</h3>
+            <div class="respuesta">
+                Para realizar un pedido, navega por nuestra tienda, selecciona los productos que deseas y agrégalo al carrito. Luego, sigue los pasos para completar tu compra.
+            </div>
+        </div>
+        
+        <div class="pregunta">
+            <h3>¿Puedo modificar mi pedido después de haberlo realizado?</h3>
+            <div class="respuesta">
+                Si necesitas modificar tu pedido, contáctanos lo antes posible. Haremos nuestro mejor esfuerzo para realizar los cambios.
+            </div>
+        </div>
+        
+        <div class="pregunta">
+            <h3>¿Qué métodos de pago aceptan?</h3>
+            <div class="respuesta">
+                Aceptamos tarjetas de crédito, débito y transferencias. Todos los pagos son seguros y procesados a través de nuestro sistema de pago confiable.
+            </div>
+        </div>
+        
+        <div class="pregunta">
+            <h3>¿Cuáles son los tiempos de envío?</h3>
+            <div class="respuesta">
+                Los tiempos de envío varían según tu ubicación. Generalmente, los pedidos se envían dentro de 1 a 3 días hábiles y la entrega puede tardar entre 3 y 7 días hábiles.
+            </div>
+        </div>
+        
+        <div class="pregunta">
+            <h3>¿Cómo puedo contactar al servicio al cliente?</h3>
+            <div class="respuesta">
+                Puedes contactarnos a través de nuestro formulario de contacto en la página web, o enviándonos un correo a soporte@tiendaenlinea.com.
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const menuButton = document.getElementById('menuButton');
+        const sidebar = document.getElementById('sidebar');
+        const closeButton = document.getElementById('closeButton');
+
+        menuButton.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+        });
+
+        closeButton.addEventListener('click', () => {
+            sidebar.classList.remove('active');
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

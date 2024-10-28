@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF pagina oficial</title>
+    <meta name="keywords" content="marca de ropa">
+    <meta name="author" content="Isabella Natali, Franca Masiero, Renata Romero, Tiziano Barrera y Nicolas Alfonso">
+    <meta name="description" content="marca de ropa">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <center>
+            <h1 class="title" id="if">IF</h1>
+        </center>
+    </header>
+    <a href="./carrito.html" id="carrito">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+        </svg>
+    </a>
+
+    <button class="btn btn-secondary" id="menuButton">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+            <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+        </svg>
+    </button>
+
+    <div class="sidebar" id="sidebar">
+        <h4>Menú</h4>
+        <ul class="list-unstyled">
+            <li><a class="dropdown-item" href="./index.html">Página Inicial</a></li>
+            <li><a class="dropdown-item" href="./productos.html">Productos</a></li>
+            <li><a class="dropdown-item" href="./hacenostupedido.html">Ayuda</a></li>
+        </ul>
+        <button class="btn btn-close" id="closeButton"></button>
+    </div>
+
+    <center>
+        <section>
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid d-flex justify-content-center">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </section>
+    </center>
+
+    <section>
+        <div class="titulo">
+            <h1>Productos Disponibles</h1>
+        </div>
+        <div class="row">
+            <!-- Productos aquí (mantenido como en tu código original) -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="./assets/crop top flor.jpeg" class="card-img-top" alt="Producto 1" style="max-width: 231px; max-height: 231px; object-fit: cover; position: bottom;">
+                    <div class="card-body">
+                        <h3 class="card-title">Crop top floreado</h3>
+                        <p class="card-text">Talle único</p>
+                        <p class="card-text">Precio: $15000</p>
+                        <button class="btn btn-light">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="./assets/top negro.jpeg" class="card-img-top" alt="Producto 2" style="max-width: 231px; max-height: 231px; object-fit: cover; position: bottom;">
+                    <div class="card-body">
+                        <h3 class="card-title">Top Negro</h3>
+                        <p class="card-text">Básico, Corte en V. Talle único</p>
+                        <p class="card-text">Precio: $20000</p>
+                        <button class="btn btn-light">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="./assets/top blanco.jpeg" class="card-img-top" alt="Producto 3" style="max-width: 231px; max-height: 231px; object-fit: cover; position: bottom;">
+                    <div class="card-body">
+                        <h3 class="card-title">Top Blanco</h3>
+                        <p class="card-text">Talle único</p>
+                        <p class="card-text">Precio: $15000</p>
+                        <button class="btn btn-light">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="./assets/top marron.jpeg" class="card-img-top" alt="Producto 4" style="max-width: 231px; max-height: 231px; object-fit: cover; position: bottom;">
+                    <div class="card-body">
+                        <h3 class="card-title">Top marrón</h3>
+                        <p class="card-text">Corte recto. Talle único</p>
+                        <p class="card-text">Precio: $15000</p>
+                        <button class="btn btn-light">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="./assets/remera con copa.jpeg" class="card-img-top" alt="Producto 5" style="max-width: 231px; max-height: 231px; object-fit: cover; position: bottom;">
+                    <div class="card-body">
+                        <h3 class="card-title">Remera cocktail</h3>
+                        <p class="card-text">Talle único</p>
+                        <p class="card-text">Precio: $20000</p>
+                        <button class="btn btn-light">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="./assets/Chaleco Beige.jpeg" class="card-img-top" alt="Producto 6" style="max-width: 231px; max-height: 231px; object-fit: cover; position: bottom;">
+                    <div class="card-body">
+                        <h3 class="card-title">Chaleco Beige</h3>
+                        <p class="card-text">Talle único</p>
+                        <p class="card-text">Precio: $35000</p>
+                        <button class="btn btn-light">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="./assets/pantalon de lino blanco.jpeg" class="card-img-top" alt="Producto 1" style="max-width: 231px; max-height: 231px; object-fit: cover; position: bottom;">
+                    <div class="card-body">
+                        <h3 class="card-title">Pantalon Blanco</h3>
+                        <p class="card-text">De lino. Talles S, M, L</p>
+                        <p class="card-text">Precio: $45000</p>
+                        <button class="btn btn-light">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="./assets/pantalon oversize blanco.jpeg" class="card-img-top" alt="Producto 2" style="max-width: 231px; max-height: 231px; object-fit: cover; position: bottom;">
+                    <div class="card-body">
+                        <h3 class="card-title">Pantalon Oversize</h3>
+                        <p class="card-text">De jean. Talles S, M, L</p>
+                        <p class="card-text">Precio: $50000</p>
+                        <button class="btn btn-light">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="./assets/Pantalon Azul Marino.jpeg" class="card-img-top" alt="Producto 3" style="max-width: 231px; max-height: 231px; object-fit: cover; position: bottom;">
+                    <div class="card-body">
+                        <h3 class="card-title">Denim</h3>
+                        <p class="card-text">De jean, azul marino. Talles S, M, L</p>
+                        <p class="card-text">Precio: $55000</p>
+                        <button class="btn btn-light">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="./assets/Pantalon celeste con cafe.jpeg" class="card-img-top" alt="Producto 4" style="max-width: 231px; max-height: 231px; object-fit: cover; position: bottom;">
+                    <div class="card-body">
+                        <h3 class="card-title">Pantalon denim</h3>
+                        <p class="card-text">Celeste. Talles S, M, L</p>
+                        <p class="card-text">Precio: $55000</p>
+                        <button class="btn btn-light">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="./assets/chica con remera blanca y pantalon azul.jpeg" class="card-img-top" alt="Producto 5" style="max-width: 231px; max-height: 231px; object-fit: cover; position: bottom;">
+                    <div class="card-body">
+                        <h3 class="card-title">Pantalon jean</h3>
+                        <p class="card-text">Talles S, M, L</p>
+                        <p class="card-text">Precio: $50000</p>
+                        <button class="btn btn-light">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="./assets/denim gris.jpeg" class="card-img-top" alt="Producto 6" style="max-width: 231px; max-height: 231px; object-fit: cover; position: bottom;">
+                    <div class="card-body">
+                        <h3 class="card-title">Denim gris</h3>
+                        <p class="card-text">Talles S, M, L</p>
+                        <p class="card-text">Precio: $55000</p>
+                        <button class="btn btn-light">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="./assets/buzo blanco.jpeg" class="card-img-top" alt="Producto 1" style="max-width: 231px; max-height: 231px; object-fit: cover; position: bottom;">
+                    <div class="card-body">
+                        <h3 class="card-title">Buzo basico blanco</h3>
+                        <p class="card-text">Talle único</p>
+                        <p class="card-text">Precio: $40000</p>
+                        <button class="btn btn-light">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="./assets/buzo massachusets.jpeg" class="card-img-top" alt="Producto 2" style="max-width: 231px; max-height: 231px; object-fit: cover; position: bottom;">
+                    <div class="card-body">
+                        <h3 class="card-title">Buzo Massachusets</h3>
+                        <p class="card-text">Talle único</p>
+                        <p class="card-text">Precio: $45000</p>
+                        <button class="btn btn-light">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="./assets/anillo de plata copn piedras.jpeg" class="card-img-top" alt="Producto 3" style="max-width: 231px; max-height: 231px; object-fit: cover; position: bottom;">
+                    <div class="card-body">
+                        <h3 class="card-title">Anillo Plata</h3>
+                        <p class="card-text">Con Piedras</p>
+                        <p class="card-text">Precio: $10000</p>
+                        <button class="btn btn-light">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="./assets/Anillo Marino.jpeg" class="card-img-top" alt="Producto 4" style="max-width: 231px; max-height: 231px; object-fit: cover; position: bottom;">
+                    <div class="card-body">
+                        <h3 class="card-title">Anillo Marino</h3>
+                        <p class="card-text">De oro</p>
+                        <p class="card-text">Precio: $80000</p>
+                        <button class="btn btn-light">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="./assets/argollas plateadas.jpeg" class="card-img-top" alt="Producto 5" style="max-width: 231px; max-height: 231px; object-fit: cover; position: bottom;">
+                    <div class="card-body">
+                        <h3 class="card-title">Argollas</h3>
+                        <p class="card-text">Plata</p>
+                        <p class="card-text">Precio: $32000</p>
+                        <button class="btn btn-light">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="./assets/aros gota de plata.jpeg" class="card-img-top" alt="Producto 6" style="max-width: 231px; max-height: 231px; object-fit: cover; position: bottom;">
+                    <div class="card-body">
+                        <h3 class="card-title">Aros gota</h3>
+                        <p class="card-text">Plata</p>
+                        <p class="card-text">Precio: $40500</p>
+                        <button class="btn btn-light">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="./assets/pulsera dorada.jpeg" class="card-img-top" alt="Producto 1" style="max-width: 231px; max-height: 231px; object-fit: cover; position: bottom;">
+                    <div class="card-body">
+                        <h3 class="card-title">Pulsera cadena</h3>
+                        <p class="card-text">Plata bañada en oro</p>
+                        <p class="card-text">Precio: $90000</p>
+                        <button class="btn btn-light">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="./assets/collar perla.jpeg" class="card-img-top" alt="Producto 2" style="max-width: 231px; max-height: 231px; object-fit: cover; position: bottom;">
+                    <div class="card-body">
+                        <h3 class="card-title">Cadena con perla</h3>
+                        <p class="card-text">Plata bañada en oro con piedras swaroski</p>
+                        <p class="card-text">Precio: $250000</p>
+                        <button class="btn btn-light">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="./assets/collares con piedrads.jpeg" class="card-img-top" alt="Producto 3" style="max-width: 231px; max-height: 231px; object-fit: cover; position: bottom;">
+                    <div class="card-body">
+                        <h3 class="card-title">Cadena</h3>
+                        <p class="card-text">Plata y piedras</p>
+                        <p class="card-text">Precio: $85000</p>
+                        <button class="btn btn-light">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        const menuButton = document.getElementById('menuButton');
+        const sidebar = document.getElementById('sidebar');
+        const closeButton = document.getElementById('closeButton');
+
+        menuButton.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+        });
+
+        closeButton.addEventListener('click', () => {
+            sidebar.classList.remove('active');
+        });
+    </script>
+</body>
+</html>

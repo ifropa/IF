@@ -1,0 +1,66 @@
+#if{
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+#carrito{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+a:link, a:visited,  a:hover, a:active{
+    text-decoration: none;
+    color: black;
+
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif !important;
+    margin: 20px;
+}
+.producto img {
+    width: 100%; /* Asegura que las imágenes ocupen todo el ancho del contenedor */
+    height: 200px; /* Establece una altura fija */
+    object-fit: cover; /* Recorta la imagen para que se ajuste sin distorsionarse */
+}
+.titulo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* Estilos para la sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Oculta inicialmente */
+    width: 250px;
+    height: 100%;
+    background-color: #f8f9fa;
+    padding: 15px;
+    transition: left 0.3s ease; /* Animación de la sidebar */
+    box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+    z-index: 1000; /* Añade esta línea para que se superponga */
+}
+.sidebar.active {
+    left: 0; /* Muestra la sidebar */
+}
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+input {
+    padding: 10px;
+    width: 300px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+}
