@@ -42,10 +42,10 @@
         <section>
             <nav class="navbar bg-body-tertiary">
                 <div class="container-fluid d-flex justify-content-center">
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <span class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" id="searchInput" placeholder="Search" aria-label="Search" onkeyup="search()">
                         <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+                    </span>
                 </div>
             </nav>
         </section>
@@ -57,33 +57,33 @@
         </div>
         <div class="row">
             <!-- Productos aquí (mantenido como en tu código original) -->
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4" id="producto1">
                 <div class="card">
                     <img src="./assets/crop top flor.jpeg" class="card-img-top" alt="Producto 1" style="max-width: 231px; max-height: 231px; object-fit: cover; position: bottom;">
                     <div class="card-body">
-                        <h3 class="card-title">Crop top floreado</h3>
+                        <h3 class="card-title" id="titulo1">Crop top floreado</h3>
                         <p class="card-text">Talle único</p>
                         <p class="card-text">Precio: $15000</p>
                         <button class="btn btn-light">Agregar al Carrito</button>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4" id="producto2">
                 <div class="card">
                     <img src="./assets/top negro.jpeg" class="card-img-top" alt="Producto 2" style="max-width: 231px; max-height: 231px; object-fit: cover; position: bottom;">
                     <div class="card-body">
-                        <h3 class="card-title">Top Negro</h3>
+                        <h3 class="card-title" id="titulo2">Top Negro</h3>
                         <p class="card-text">Básico, Corte en V. Talle único</p>
                         <p class="card-text">Precio: $20000</p>
                         <button class="btn btn-light">Agregar al Carrito</button>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4"  id="producto3">
                 <div class="card">
                     <img src="./assets/top blanco.jpeg" class="card-img-top" alt="Producto 3" style="max-width: 231px; max-height: 231px; object-fit: cover; position: bottom;">
                     <div class="card-body">
-                        <h3 class="card-title">Top Blanco</h3>
+                        <h3 class="card-title" id="titulo3">Top Blanco</h3>
                         <p class="card-text">Talle único</p>
                         <p class="card-text">Precio: $15000</p>
                         <button class="btn btn-light">Agregar al Carrito</button>
@@ -92,33 +92,33 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4" id="producto4">
                 <div class="card">
                     <img src="./assets/top marron.jpeg" class="card-img-top" alt="Producto 4" style="max-width: 231px; max-height: 231px; object-fit: cover; position: bottom;">
                     <div class="card-body">
-                        <h3 class="card-title">Top marrón</h3>
+                        <h3 class="card-title" id="titulo4">Top marrón</h3>
                         <p class="card-text">Corte recto. Talle único</p>
                         <p class="card-text">Precio: $15000</p>
                         <button class="btn btn-light">Agregar al Carrito</button>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4" id="producto5">
                 <div class="card">
                     <img src="./assets/remera con copa.jpeg" class="card-img-top" alt="Producto 5" style="max-width: 231px; max-height: 231px; object-fit: cover; position: bottom;">
                     <div class="card-body">
-                        <h3 class="card-title">Remera cocktail</h3>
+                        <h3 class="card-title" id="titulo5">Remera cocktail</h3>
                         <p class="card-text">Talle único</p>
                         <p class="card-text">Precio: $20000</p>
                         <button class="btn btn-light">Agregar al Carrito</button>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4" id="producto6">
                 <div class="card">
                     <img src="./assets/Chaleco Beige.jpeg" class="card-img-top" alt="Producto 6" style="max-width: 231px; max-height: 231px; object-fit: cover; position: bottom;">
                     <div class="card-body">
-                        <h3 class="card-title">Chaleco Beige</h3>
+                        <h3 class="card-title" id="titulo6">Chaleco Beige</h3>
                         <p class="card-text">Talle único</p>
                         <p class="card-text">Precio: $35000</p>
                         <button class="btn btn-light">Agregar al Carrito</button>
@@ -127,33 +127,33 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4" id="producto7">
                 <div class="card">
                     <img src="./assets/pantalon de lino blanco.jpeg" class="card-img-top" alt="Producto 1" style="max-width: 231px; max-height: 231px; object-fit: cover; position: bottom;">
                     <div class="card-body">
-                        <h3 class="card-title">Pantalon Blanco</h3>
+                        <h3 class="card-title" id="titulo7">Pantalon Blanco</h3>
                         <p class="card-text">De lino. Talles S, M, L</p>
                         <p class="card-text">Precio: $45000</p>
                         <button class="btn btn-light">Agregar al Carrito</button>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4" id="producto8">
                 <div class="card">
                     <img src="./assets/pantalon oversize blanco.jpeg" class="card-img-top" alt="Producto 2" style="max-width: 231px; max-height: 231px; object-fit: cover; position: bottom;">
                     <div class="card-body">
-                        <h3 class="card-title">Pantalon Oversize</h3>
+                        <h3 class="card-title" id="titulo8">Pantalon Oversize</h3>
                         <p class="card-text">De jean. Talles S, M, L</p>
                         <p class="card-text">Precio: $50000</p>
                         <button class="btn btn-light">Agregar al Carrito</button>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4" id="producto9">
                 <div class="card">
                     <img src="./assets/Pantalon Azul Marino.jpeg" class="card-img-top" alt="Producto 3" style="max-width: 231px; max-height: 231px; object-fit: cover; position: bottom;">
                     <div class="card-body">
-                        <h3 class="card-title">Denim</h3>
+                        <h3 class="card-title" id="titulo9">Denim</h3>
                         <p class="card-text">De jean, azul marino. Talles S, M, L</p>
                         <p class="card-text">Precio: $55000</p>
                         <button class="btn btn-light">Agregar al Carrito</button>
@@ -162,33 +162,33 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4" id="producto10">
                 <div class="card">
                     <img src="./assets/Pantalon celeste con cafe.jpeg" class="card-img-top" alt="Producto 4" style="max-width: 231px; max-height: 231px; object-fit: cover; position: bottom;">
                     <div class="card-body">
-                        <h3 class="card-title">Pantalon denim</h3>
+                        <h3 class="card-title" id="titulo10">Pantalon denim</h3>
                         <p class="card-text">Celeste. Talles S, M, L</p>
                         <p class="card-text">Precio: $55000</p>
                         <button class="btn btn-light">Agregar al Carrito</button>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4" id="producto11">
                 <div class="card">
                     <img src="./assets/chica con remera blanca y pantalon azul.jpeg" class="card-img-top" alt="Producto 5" style="max-width: 231px; max-height: 231px; object-fit: cover; position: bottom;">
                     <div class="card-body">
-                        <h3 class="card-title">Pantalon jean</h3>
+                        <h3 class="card-title" id="titulo11">Pantalon jean</h3>
                         <p class="card-text">Talles S, M, L</p>
                         <p class="card-text">Precio: $50000</p>
                         <button class="btn btn-light">Agregar al Carrito</button>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4" id="producto12">
                 <div class="card">
                     <img src="./assets/denim gris.jpeg" class="card-img-top" alt="Producto 6" style="max-width: 231px; max-height: 231px; object-fit: cover; position: bottom;">
                     <div class="card-body">
-                        <h3 class="card-title">Denim gris</h3>
+                        <h3 class="card-title" id="titulo12">Denim gris</h3>
                         <p class="card-text">Talles S, M, L</p>
                         <p class="card-text">Precio: $55000</p>
                         <button class="btn btn-light">Agregar al Carrito</button>
@@ -197,33 +197,33 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4" id="producto13">
                 <div class="card">
                     <img src="./assets/buzo blanco.jpeg" class="card-img-top" alt="Producto 1" style="max-width: 231px; max-height: 231px; object-fit: cover; position: bottom;">
                     <div class="card-body">
-                        <h3 class="card-title">Buzo basico blanco</h3>
+                        <h3 class="card-title" id="titulo13">Buzo basico blanco</h3>
                         <p class="card-text">Talle único</p>
                         <p class="card-text">Precio: $40000</p>
                         <button class="btn btn-light">Agregar al Carrito</button>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4" id="producto14">
                 <div class="card">
                     <img src="./assets/buzo massachusets.jpeg" class="card-img-top" alt="Producto 2" style="max-width: 231px; max-height: 231px; object-fit: cover; position: bottom;">
                     <div class="card-body">
-                        <h3 class="card-title">Buzo Massachusets</h3>
+                        <h3 class="card-title" id="titulo14">Buzo Massachusets</h3>
                         <p class="card-text">Talle único</p>
                         <p class="card-text">Precio: $45000</p>
                         <button class="btn btn-light">Agregar al Carrito</button>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4" id="producto15">
                 <div class="card">
                     <img src="./assets/anillo de plata copn piedras.jpeg" class="card-img-top" alt="Producto 3" style="max-width: 231px; max-height: 231px; object-fit: cover; position: bottom;">
                     <div class="card-body">
-                        <h3 class="card-title">Anillo Plata</h3>
+                        <h3 class="card-title" id="titulo15">Anillo Plata</h3>
                         <p class="card-text">Con Piedras</p>
                         <p class="card-text">Precio: $10000</p>
                         <button class="btn btn-light">Agregar al Carrito</button>
@@ -232,33 +232,33 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4" id="producto16">
                 <div class="card">
                     <img src="./assets/Anillo Marino.jpeg" class="card-img-top" alt="Producto 4" style="max-width: 231px; max-height: 231px; object-fit: cover; position: bottom;">
                     <div class="card-body">
-                        <h3 class="card-title">Anillo Marino</h3>
+                        <h3 class="card-title" id="titulo16">Anillo Marino</h3>
                         <p class="card-text">De oro</p>
                         <p class="card-text">Precio: $80000</p>
                         <button class="btn btn-light">Agregar al Carrito</button>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4" id="producto17">
                 <div class="card">
                     <img src="./assets/argollas plateadas.jpeg" class="card-img-top" alt="Producto 5" style="max-width: 231px; max-height: 231px; object-fit: cover; position: bottom;">
                     <div class="card-body">
-                        <h3 class="card-title">Argollas</h3>
+                        <h3 class="card-title" id="titulo17">Argollas</h3>
                         <p class="card-text">Plata</p>
                         <p class="card-text">Precio: $32000</p>
                         <button class="btn btn-light">Agregar al Carrito</button>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4" id="producto18">
                 <div class="card">
                     <img src="./assets/aros gota de plata.jpeg" class="card-img-top" alt="Producto 6" style="max-width: 231px; max-height: 231px; object-fit: cover; position: bottom;">
                     <div class="card-body">
-                        <h3 class="card-title">Aros gota</h3>
+                        <h3 class="card-title" id="titulo18">Aros gota</h3>
                         <p class="card-text">Plata</p>
                         <p class="card-text">Precio: $40500</p>
                         <button class="btn btn-light">Agregar al Carrito</button>
@@ -267,33 +267,33 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4" id="producto19">
                 <div class="card">
                     <img src="./assets/pulsera dorada.jpeg" class="card-img-top" alt="Producto 1" style="max-width: 231px; max-height: 231px; object-fit: cover; position: bottom;">
                     <div class="card-body">
-                        <h3 class="card-title">Pulsera cadena</h3>
+                        <h3 class="card-title" id="titulo19">Pulsera cadena</h3>
                         <p class="card-text">Plata bañada en oro</p>
                         <p class="card-text">Precio: $90000</p>
                         <button class="btn btn-light">Agregar al Carrito</button>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4" id="producto20">
                 <div class="card">
                     <img src="./assets/collar perla.jpeg" class="card-img-top" alt="Producto 2" style="max-width: 231px; max-height: 231px; object-fit: cover; position: bottom;">
                     <div class="card-body">
-                        <h3 class="card-title">Cadena con perla</h3>
+                        <h3 class="card-title" id="titulo20">Cadena con perla</h3>
                         <p class="card-text">Plata bañada en oro con piedras swaroski</p>
                         <p class="card-text">Precio: $250000</p>
                         <button class="btn btn-light">Agregar al Carrito</button>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4" id="producto21">
                 <div class="card">
                     <img src="./assets/collares con piedrads.jpeg" class="card-img-top" alt="Producto 3" style="max-width: 231px; max-height: 231px; object-fit: cover; position: bottom;">
                     <div class="card-body">
-                        <h3 class="card-title">Cadena</h3>
+                        <h3 class="card-title" id="titulo21">Cadena</h3>
                         <p class="card-text">Plata y piedras</p>
                         <p class="card-text">Precio: $85000</p>
                         <button class="btn btn-light">Agregar al Carrito</button>
@@ -316,6 +316,85 @@
         closeButton.addEventListener('click', () => {
             sidebar.classList.remove('active');
         });
+    </script>
+    <script>
+        function search() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            console.log("Hola");
+            let items = [];
+            const elemento1 = document.getElementById('producto1');
+            const elemento2 = document.getElementById('producto2');
+            const elemento3 = document.getElementById('producto3');
+            const elemento4 = document.getElementById('producto4');
+            const elemento5 = document.getElementById('producto5');
+            const elemento6 = document.getElementById('producto6');
+            const elemento7 = document.getElementById('producto7');
+            const elemento8 = document.getElementById('producto8');
+            const elemento9 = document.getElementById('producto9');
+            const elemento10 = document.getElementById('producto10');
+            const elemento11 = document.getElementById('producto11');
+            const elemento12 = document.getElementById('producto12');
+            const elemento13 = document.getElementById('producto13');
+            const elemento14 = document.getElementById('producto14');
+            const elemento15 = document.getElementById('producto15');
+            const elemento16 = document.getElementById('producto16');
+            const elemento17 = document.getElementById('producto17');
+            const elemento18 = document.getElementById('producto18');
+            const elemento19 = document.getElementById('producto19');
+            const elemento20 = document.getElementById('producto20');
+            const elemento21 = document.getElementById('producto21');
+
+            items.push(elemento1);
+            items.push(elemento2);
+            items.push(elemento3);
+            items.push(elemento4);
+            items.push(elemento5);
+            items.push(elemento6);
+            items.push(elemento7);
+            items.push(elemento8);
+            items.push(elemento9);
+            items.push(elemento10);
+            items.push(elemento11);
+            items.push(elemento12);
+            items.push(elemento13);
+            items.push(elemento13);
+            items.push(elemento14);
+            items.push(elemento15);
+            items.push(elemento16);
+            items.push(elemento17);
+            items.push(elemento18);
+            items.push(elemento19);
+            items.push(elemento20);
+            items.push(elemento21);
+
+            let productos = [];
+
+            productos.push(document.getElementById('titulo1'));
+            productos.push(document.getElementById('titulo2'));
+            productos.push(document.getElementById('titulo3'));
+            productos.push(document.getElementById('titulo4'));
+            productos.push(document.getElementById('titulo5'));
+            productos.push(document.getElementById('titulo6'));
+            productos.push(document.getElementById('titulo7'));
+            productos.push(document.getElementById('titulo8'));
+            productos.push(document.getElementById('titulo9'));
+            productos.push(document.getElementById('titulo10'));
+            productos.push(document.getElementById('titulo11'));
+            productos.push(document.getElementById('titulo12'));
+            productos.push(document.getElementById('titulo14'));
+            productos.push(document.getElementById('titulo15'));
+            productos.push(document.getElementById('titulo16'));
+            productos.push(document.getElementById('titulo17'));
+            productos.push(document.getElementById('titulo18'));
+            productos.push(document.getElementById('titulo19'));
+            productos.push(document.getElementById('titulo20'));
+            productos.push(document.getElementById('titulo21'));
+
+            for (let i = 0; i < productos.length; i++) {
+                const item = productos[i].textContent.toLowerCase();
+                items[i].style.display = productos.includes(input) ? '' : 'none';
+            }
+        }
     </script>
 </body>
 </html>
