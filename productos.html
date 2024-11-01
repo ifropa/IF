@@ -320,80 +320,24 @@
     <script>
         function search() {
             const input = document.getElementById('searchInput').value.toLowerCase();
-            console.log("Hola");
-            let items = [];
-            const elemento1 = document.getElementById('producto1');
-            const elemento2 = document.getElementById('producto2');
-            const elemento3 = document.getElementById('producto3');
-            const elemento4 = document.getElementById('producto4');
-            const elemento5 = document.getElementById('producto5');
-            const elemento6 = document.getElementById('producto6');
-            const elemento7 = document.getElementById('producto7');
-            const elemento8 = document.getElementById('producto8');
-            const elemento9 = document.getElementById('producto9');
-            const elemento10 = document.getElementById('producto10');
-            const elemento11 = document.getElementById('producto11');
-            const elemento12 = document.getElementById('producto12');
-            const elemento13 = document.getElementById('producto13');
-            const elemento14 = document.getElementById('producto14');
-            const elemento15 = document.getElementById('producto15');
-            const elemento16 = document.getElementById('producto16');
-            const elemento17 = document.getElementById('producto17');
-            const elemento18 = document.getElementById('producto18');
-            const elemento19 = document.getElementById('producto19');
-            const elemento20 = document.getElementById('producto20');
-            const elemento21 = document.getElementById('producto21');
+            const products = document.querySelectorAll('.card');
+            let hasResults = false;
 
-            items.push(elemento1);
-            items.push(elemento2);
-            items.push(elemento3);
-            items.push(elemento4);
-            items.push(elemento5);
-            items.push(elemento6);
-            items.push(elemento7);
-            items.push(elemento8);
-            items.push(elemento9);
-            items.push(elemento10);
-            items.push(elemento11);
-            items.push(elemento12);
-            items.push(elemento13);
-            items.push(elemento13);
-            items.push(elemento14);
-            items.push(elemento15);
-            items.push(elemento16);
-            items.push(elemento17);
-            items.push(elemento18);
-            items.push(elemento19);
-            items.push(elemento20);
-            items.push(elemento21);
+            products.forEach(product => {
+                const title = product.querySelector('.card-title').textContent.toLowerCase();
 
-            let productos = [];
+                
+                if (input === '' || title.includes(input)) {
+                    product.parentElement.style.display = 'block';
+                    hasResults = true;
+                } else {
+                    product.parentElement.style.display = 'none';
+                }
+            });
 
-            productos.push(document.getElementById('titulo1'));
-            productos.push(document.getElementById('titulo2'));
-            productos.push(document.getElementById('titulo3'));
-            productos.push(document.getElementById('titulo4'));
-            productos.push(document.getElementById('titulo5'));
-            productos.push(document.getElementById('titulo6'));
-            productos.push(document.getElementById('titulo7'));
-            productos.push(document.getElementById('titulo8'));
-            productos.push(document.getElementById('titulo9'));
-            productos.push(document.getElementById('titulo10'));
-            productos.push(document.getElementById('titulo11'));
-            productos.push(document.getElementById('titulo12'));
-            productos.push(document.getElementById('titulo14'));
-            productos.push(document.getElementById('titulo15'));
-            productos.push(document.getElementById('titulo16'));
-            productos.push(document.getElementById('titulo17'));
-            productos.push(document.getElementById('titulo18'));
-            productos.push(document.getElementById('titulo19'));
-            productos.push(document.getElementById('titulo20'));
-            productos.push(document.getElementById('titulo21'));
-
-            for (let i = 0; i < productos.length; i++) {
-                const item = productos[i].textContent.toLowerCase();
-                items[i].style.display = productos.includes(input) ? '' : 'none';
-            }
+            
+            const message = document.getElementById('noResults');
+            message.style.display = hasResults ? 'none' : 'block';
         }
     </script>
 </body>
